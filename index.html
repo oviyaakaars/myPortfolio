@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oviyaa Karthikeyan - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Site Header -->
+    <header class="site-header">
+        <div class="header-content">
+            <div class="header-brand">
+                <h1 class="brand-name">Oviyaa Karthikeyan</h1>
+                <span class="brand-tagline">Software • Analytics • Business</span>
+            </div>
+            <nav class="header-nav">
+                <a href="#intro">About</a>
+                <a href="#software">Software</a>
+                <a href="#analytics">Analytics</a>
+                <a href="#business">Business</a>
+                <a href="#ai">AI</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="portfolio-container">
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- About Section -->
+            <section id="intro" class="section intro-section">
+                <div>
+                    <h2 class="section-title">About</h2>
+                    <p class="intro-text">
+                        Most meaningful decisions aren't made with perfect data. They're made with partial information, under time pressure, and within real constraints like regulatory requirements, legacy systems, competing priorities, and people who need answers now.
+                    </p>
+                    <p class="intro-text">
+                        My work sits at the intersection of software systems, analytics, and business judgment. I focus on building reliable infrastructure, questioning data quality, and translating analysis into decisions that matter. The goal isn't to eliminate uncertainty but to navigate it thoughtfully and to keep improving how decisions get made.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Software & Systems Section -->
+            <section id="software" class="section">
+                <div>
+                    <div class="section-header">
+                        <div class="section-header-content">
+                            <h2 class="section-title">Software & Systems</h2>
+                            <p class="section-summary">Building reliable infrastructure that supports decision-making under real-world constraints.</p>
+                        </div>
+                        <div class="expand-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="section-content">
+                        <div class="section-skills">
+                        <span class="skill-tag">Backend Development</span>
+                        <span class="skill-tag">API Design</span>
+                        <span class="skill-tag">Event Streaming</span>
+                        <span class="skill-tag">CI/CD Automation</span>
+                        <span class="skill-tag">Containerization</span>
+                        <span class="skill-tag">System Monitoring</span>
+                        <span class="skill-tag">Database Design</span>
+                        <span class="skill-tag">Infrastructure as Code</span>
+                    </div>
+                    
+                    <div class="project-grid">
+                        <article class="project-card">
+                            <div class="project-header">
+                                <div class="project-header-content">
+                                    <h3 class="project-title">Healthcare API Reliability & Monitoring</h3>
+                                    <p class="project-summary">Built monitoring and observability systems for production-grade backend services handling millions of healthcare requests.</p>
+                                </div>
+                                <div class="expand-icon-small">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4>The Business Context</h4>
+                                <p>Healthcare workflows depend on production-grade backend services that need to be available and responsive. When APIs are slow or unavailable, it affects patient care, provider operations, and business processes. Teams needed visibility into system health and the ability to identify issues before they impacted users.</p>
+                                <h4>The Constraints</h4>
+                                <p>Scalable systems handled millions of requests per month across distributed infrastructure. Issues could originate from multiple sources like application code, infrastructure, dependencies, or data problems. Teams needed to detect problems quickly but also needed context to understand root causes. Alert fatigue was a real concern because too many alerts and teams would ignore them.</p>
+                                <h4>The Approach</h4>
+                                <p>Built monitoring dashboards that tracked key metrics including request volume, latency, error rates, and dependency health. Implemented alerting that focused on business impact rather than raw metrics, reducing noise while improving detection speed. Created runbooks that documented common issues and resolution steps, helping teams respond faster to incidents. Conducted root-cause analysis on production issues to identify patterns and prevent recurrence.</p>
+                                <h4>The Outcome</h4>
+                                <p>Reduced mean time to detection by providing clear visibility into system health. Helped teams resolve incidents faster through better context and documentation. Improved system reliability by identifying and addressing recurring issues.</p>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-header">
+                                <div class="project-header-content">
+                                    <h3 class="project-title">Event-Driven Data Pipeline for Healthcare Operations</h3>
+                                    <p class="project-summary">Built real-time data pipelines to process continuous streams of healthcare events across distributed systems.</p>
+                                </div>
+                                <div class="expand-icon-small">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4>The Business Context</h4>
+                                <p>Healthcare operations generate continuous streams of events like claims submissions, eligibility checks, and provider updates. Teams needed to process these events in real-time through production-critical applications to support operational workflows and maintain data consistency across systems.</p>
+                                <h4>The Constraints</h4>
+                                <p>Event volumes were high and variable. Processing needed to be reliable because lost or duplicated events could cause data inconsistencies. Different downstream systems had different latency requirements. The pipeline needed to handle schema changes without breaking existing consumers.</p>
+                                <h4>The Approach</h4>
+                                <p>Implemented event streaming using Kafka to handle high-throughput, real-time data flows. Built processing logic that validated events, enriched data, and routed to appropriate downstream systems. Designed for fault tolerance with proper error handling and retry mechanisms. Created monitoring to track processing lag and identify bottlenecks.</p>
+                                <h4>The Outcome</h4>
+                                <p>Enabled real-time data processing that supported operational workflows. Improved data consistency across systems through reliable event handling. Provided visibility into data flows that helped teams troubleshoot issues faster.</p>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-header">
+                                <div class="project-header-content">
+                                    <h3 class="project-title">CI/CD Pipeline Automation for Regulated Environment</h3>
+                                    <p class="project-summary">Automated deployment processes in a healthcare environment where changes needed to be both fast and compliant.</p>
+                                </div>
+                                <div class="expand-icon-small">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4>The Business Context</h4>
+                            <p>In healthcare, deployments need to be reliable, traceable, and compliant with regulatory requirements. Manual deployment processes were time-consuming and introduced risk through configuration errors, missed steps, and lack of audit trails.</p>
+                            <h4>The Constraints</h4>
+                            <p>Changes needed to be tested thoroughly before reaching production. Deployments needed to be repeatable and auditable. Rollback procedures needed to be fast and reliable. The process needed to balance speed with safety because teams wanted to deploy frequently but couldn't compromise on quality or compliance.</p>
+                            <h4>The Approach</h4>
+                            <p>Automated build, test, and deployment pipelines using Jenkins and containerization with Docker and Kubernetes. Integrated unit and integration testing into CI workflows to catch issues early. Implemented automated validation checks for configuration and compliance requirements. Created clear deployment documentation and runbooks for troubleshooting.</p>
+                            <h4>The Outcome</h4>
+                            <p>Reduced manual deployment effort and accelerated release cycles. Decreased post-release defects through automated testing. Improved audit compliance through automated tracking of changes and deployments. Enabled teams to deploy more frequently with greater confidence.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Analytics & Data Section -->
+            <section id="analytics" class="section">
+                <div>
+                    <div class="section-header">
+                        <div class="section-header-content">
+                            <h2 class="section-title">Analytics & Data</h2>
+                            <p class="section-summary">Translating data into insights that support real decisions, with attention to quality and context.</p>
+                        </div>
+                        <div class="expand-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="section-content">
+                        <div class="section-skills">
+                        <span class="skill-tag">Statistical Analysis</span>
+                        <span class="skill-tag">Predictive Modeling</span>
+                        <span class="skill-tag">Risk Modeling</span>
+                        <span class="skill-tag">Customer Segmentation</span>
+                        <span class="skill-tag">A/B Testing</span>
+                        <span class="skill-tag">Data Visualization</span>
+                        <span class="skill-tag">Model Validation</span>
+                        <span class="skill-tag">Dashboard Development</span>
+                    </div>
+                    
+                    <div class="project-grid">
+                        <article class="project-card">
+                            <div class="project-header">
+                                <div class="project-header-content">
+                                    <h3 class="project-title">Promotional Campaign Effectiveness Analysis</h3>
+                                    <p class="project-summary">Analyzed promotional campaigns to separate genuine impact from noise like seasonality and external events.</p>
+                                </div>
+                                <div class="expand-icon-small">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4>The Business Context</h4>
+                            <p>The lottery ran multiple promotional campaigns throughout the year, but it wasn't always clear which promotions were driving incremental sales versus simply shifting timing of purchases. Leadership needed to understand ROI to make better decisions about promotional spend.</p>
+                            <h4>The Constraints</h4>
+                            <p>Sales were influenced by many factors like seasonality, jackpot sizes, external events, and promotions. Customer behavior varied significantly across segments. Data came from multiple systems with different levels of granularity. Stakeholders needed answers quickly to inform upcoming campaign decisions.</p>
+                            <h4>The Approach</h4>
+                            <p>Designed experiment-style analyses to isolate promotional impact from other factors. Built models to estimate redemption likelihood and expected sales uplift. Segmented customers to identify which groups responded to different promotion types. Created dashboards that showed campaign performance metrics like conversion rates, incremental sales, and ROI in a way that supported decision-making.</p>
+                            <h4>The Outcome</h4>
+                            <p>Helped leadership identify underperforming promotions and reallocate budget to more effective campaigns. Provided insights into which customer segments were most responsive to different promotion types. Enabled faster, more informed decisions about promotional strategy.</p>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-header">
+                                <div class="project-header-content">
+                                    <h3 class="project-title">Credit Risk Assessment and Portfolio Monitoring</h3>
+                                    <p class="project-summary">Built models to assess borrower risk and support portfolio management decisions across different regions and customer segments.</p>
+                                </div>
+                                <div class="expand-icon-small">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4>The Business Context</h4>
+                                <p>Ford needed to understand credit risk across its auto loan portfolio to make informed decisions about lending criteria, collections strategies, and capital allocation. Risk patterns varied by region, customer segment, and loan characteristics.</p>
+                                <h4>The Constraints</h4>
+                                <p>Credit data came from multiple sources with varying quality and timeliness. Models needed to perform consistently across different geographies and customer segments. Risk assessments needed to be explainable to support business decisions. Stakeholders needed timely visibility into portfolio health without manual data pulls.</p>
+                                <h4>The Approach</h4>
+                                <p>Built analytical models to estimate delinquency risk and probability of default using credit scores, repayment history, and borrower characteristics. Validated model performance across different segments using precision, recall, and ROC-AUC metrics. Segmented borrowers into risk tiers to support targeted monitoring and collections strategies. Created dashboards that communicated risk trends to finance and operations teams.</p>
+                                <h4>The Outcome</h4>
+                                <p>Enabled more informed decisions about lending criteria and collections resource allocation. Reduced time spent on manual reporting, allowing teams to focus on analysis and action. Improved visibility into portfolio risk trends across regions and segments.</p>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-header">
+                                <div class="project-header-content">
+                                    <h3 class="project-title">Enterprise Data Model for Cross-Functional Analytics</h3>
+                                    <p class="project-summary">Designed a consolidated data model that integrated information from dozens of source systems to support consistent reporting and analysis.</p>
+                                </div>
+                                <div class="expand-icon-small">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4>The Business Context</h4>
+                                <p>Teams across the organization needed consistent access to data for reporting and analysis, but information was scattered across multiple systems with different structures and definitions. This led to inconsistent metrics, duplicated effort, and slow decision-making.</p>
+                                <h4>The Constraints</h4>
+                                <p>Data came from 40+ source systems with different schemas and update frequencies. Different teams had different definitions for similar metrics. The data model needed to support both operational reporting and analytical use cases. Changes to source systems couldn't break existing reports and dashboards.</p>
+                                <h4>The Approach</h4>
+                                <p>Designed a consolidated data model that integrated information from multiple sources while maintaining clear lineage and definitions. Worked with stakeholders to establish consistent metric definitions and business rules. Built validation checks to ensure data quality and flag inconsistencies. Used LLM-based agents to validate and standardize address data from inconsistent sources, improving data quality while reducing manual review effort. Created documentation that helped teams understand what data was available and how to use it correctly.</p>
+                                <h4>The Outcome</h4>
+                                <p>Enabled consistent reporting and analysis across teams. Reduced time spent reconciling conflicting numbers. Improved decision-making speed by providing reliable, accessible data. Freed up analytical capacity by reducing duplicated data preparation work.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Business & Process Section -->
+            <section id="business" class="section">
+                <div>
+                    <div class="section-header">
+                        <div class="section-header-content">
+                            <h2 class="section-title">Business & Process</h2>
+                            <p class="section-summary">Improving how work gets done through automation, documentation, and thoughtful process design.</p>
+                        </div>
+                        <div class="expand-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="section-content">
+                        <div class="section-skills">
+                        <span class="skill-tag">Process Analysis</span>
+                        <span class="skill-tag">Workflow Automation</span>
+                        <span class="skill-tag">Data Modeling</span>
+                        <span class="skill-tag">Requirements Gathering</span>
+                        <span class="skill-tag">Impact Measurement</span>
+                        <span class="skill-tag">Cross-Functional Collaboration</span>
+                        <span class="skill-tag">Documentation</span>
+                        <span class="skill-tag">Compliance</span>
+                    </div>
+                    
+                    <div class="project-grid">
+                        <article class="project-card">
+                            <div class="project-header">
+                                <div class="project-header-content">
+                                    <h3 class="project-title">Workflow Automation for Enterprise Operations</h3>
+                                    <p class="project-summary">Identified and automated repetitive manual tasks across enterprise workflows to free up team capacity for work requiring judgment.</p>
+                                </div>
+                                <div class="expand-icon-small">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4>The Business Context</h4>
+                            <p>Teams were spending significant time on manual, repetitive tasks like data entry, report generation, status updates, and approvals. This created bottlenecks, introduced errors, and prevented teams from focusing on work that required judgment and expertise.</p>
+                            <h4>The Constraints</h4>
+                            <p>Workflows spanned multiple systems that didn't integrate well. Different teams had different processes for similar tasks. Some steps required human judgment and couldn't be fully automated. Changes to workflows needed to be documented and approved. Teams were busy and had limited time to adopt new tools.</p>
+                            <h4>The Approach</h4>
+                            <p>Mapped existing workflows to identify manual steps that could be automated without sacrificing quality or control. Built automation that handled routine tasks while preserving human oversight for complex cases. Used LLM APIs to validate and standardize address data from inconsistent formats, reducing manual review time while maintaining accuracy through validation rules. Designed solutions that integrated with existing systems rather than requiring wholesale replacement. Created clear documentation and provided training to help teams adopt new processes.</p>
+                            <h4>The Outcome</h4>
+                            <p>Reduced turnaround time for routine processes by eliminating manual steps. Freed up team capacity to focus on work requiring judgment and expertise. Improved consistency and reduced errors through automation. Quantified impact by measuring reductions in processing time and manual effort.</p>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-header">
+                                <div class="project-header-content">
+                                    <h3 class="project-title">Compliance Documentation and Audit Support</h3>
+                                    <p class="project-summary">Created and maintained documentation that supported compliance audits in a regulated healthcare environment.</p>
+                                </div>
+                                <div class="expand-icon-small">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4>The Business Context</h4>
+                                <p>Healthcare systems handling patient data must comply with strict regulatory requirements. Audits require clear documentation of security controls, data handling practices, and system changes. Gaps in documentation create compliance risk and slow down audit processes.</p>
+                                <h4>The Constraints</h4>
+                                <p>Documentation needed to be accurate, complete, and up-to-date. Engineers were focused on building and maintaining systems, not writing documentation. Requirements changed as regulations evolved. Audit timelines were tight and required quick access to specific information.</p>
+                            <h4>The Approach</h4>
+                            <p>Created technical documentation and runbooks that captured system architecture, security controls, and operational procedures. Implemented secure coding practices and documented how they were applied. Built processes to keep documentation current as systems evolved. Organized documentation to support efficient audit responses.</p>
+                            <h4>The Outcome</h4>
+                            <p>Passed compliance audits without findings. Reduced time spent responding to audit requests through organized, accessible documentation. Improved team understanding of security requirements and best practices. Enabled faster onboarding by providing clear documentation of systems and processes.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How I Use AI Section -->
+            <section id="ai" class="section">
+                <div>
+                    <div class="section-header">
+                        <div class="section-header-content">
+                            <h2 class="section-title">How I Use AI</h2>
+                            <p class="section-summary">Using AI deliberately to improve efficiency while maintaining judgment and transparency.</p>
+                        </div>
+                        <div class="expand-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="section-content">
+                        <div class="ai-content">
+                        <p>
+                            I use AI when it meaningfully improves how I work, particularly in making sense of ambiguity, accelerating early analysis, or surfacing patterns in data that would otherwise take longer to uncover. As AI capabilities continue to evolve, I see it as a powerful way to improve efficiency and broaden perspective in the early stages of problem-solving.
+                        </p>
+                        <p>
+                            I'm deliberate about where I apply it. When simpler analytical approaches are more reliable, or when explainability and transparency are critical, I rely on traditional methods and human judgment. In high-stakes or regulated contexts, AI supports analysis rather than driving conclusions, and outputs are always validated and documented.
+                        </p>
+                        <p>
+                            AI is a tool, not a substitute for thinking. Its value lies in helping me move faster, ask better questions, and identify angles I might have missed, while the core work remains the same: understanding the problem, questioning the data, and translating insights into decisions that people can trust and act on.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="section">
+                <div>
+                    <div class="section-header">
+                        <div class="section-header-content">
+                            <h2 class="section-title">Experience</h2>
+                            <p class="section-summary">Professional journey across software engineering, analytics, and business roles.</p>
+                        </div>
+                        <div class="expand-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="section-content">
+                        <div class="experience-list">
+                        <article class="experience-item">
+                            <div class="experience-logo">
+                                <img src="images/unitedhealth.png" alt="UnitedHealth Group" class="company-logo">
+                            </div>
+                            <div class="experience-content">
+                                <h3 class="experience-title">Software Engineer</h3>
+                                <p class="experience-meta">UnitedHealth Group • Hyderabad, India • August 2021 - August 2024</p>
+                                <p class="experience-description">
+                                    I worked on backend services that supported healthcare workflows—systems that needed to be reliable, secure, and compliant with healthcare regulations. The work involved building APIs that handled millions of requests per month, where downtime or errors could affect patient care and business operations.
+                                </p>
+                                <p class="experience-description">
+                                    Much of the focus was on reliability and observability. Building monitoring dashboards that helped teams identify issues before they escalated. Setting up alerting that reduced the time it took to detect problems. Investigating production incidents to understand root causes and prevent recurrence. The goal was to make systems predictable and trustworthy.
+                                </p>
+                                <p class="experience-description">
+                                    I also worked on improving deployment processes—containerizing services, automating CI/CD pipelines, and integrating testing into workflows. This reduced manual effort and made releases more consistent. The work required balancing speed with safety, especially in a regulated environment where changes needed to be traceable and auditable.
+                                </p>
+                                <p class="experience-description">
+                                    I spent time mentoring junior engineers, conducting code reviews, and documenting systems. The goal was to help the team move faster without sacrificing quality—building shared understanding of how things worked and why certain decisions were made.
+                                </p>
+                                <div class="experience-tools">
+                                    <h4 class="tools-heading">Technologies & Tools</h4>
+                                    <div class="tools-grid">
+                                        <span class="tool-item"><span class="tool-icon">☕</span><span class="tool-name">Java</span></span>
+                                        <span class="tool-item"><span class="tool-icon">🍃</span><span class="tool-name">Spring Boot</span></span>
+                                        <span class="tool-item"><span class="tool-icon">☁️</span><span class="tool-name">AWS</span></span>
+                                        <span class="tool-item"><span class="tool-icon">📦</span><span class="tool-name">Docker</span></span>
+                                        <span class="tool-item"><span class="tool-icon">⚓</span><span class="tool-name">Kubernetes</span></span>
+                                        <span class="tool-item"><span class="tool-icon">🔄</span><span class="tool-name">Kafka</span></span>
+                                        <span class="tool-item"><span class="tool-icon">🔧</span><span class="tool-name">Jenkins</span></span>
+                                        <span class="tool-item"><span class="tool-icon">📊</span><span class="tool-name">CloudWatch</span></span>
+                                        <span class="tool-item"><span class="tool-icon">🔍</span><span class="tool-name">Splunk</span></span>
+                                        <span class="tool-item"><span class="tool-icon">📈</span><span class="tool-name">Prometheus</span></span>
+                                        <span class="tool-item"><span class="tool-icon">🗄️</span><span class="tool-name">MySQL</span></span>
+                                        <span class="tool-item"><span class="tool-icon">💾</span><span class="tool-name">Cassandra</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="experience-item">
+                            <div class="experience-logo">
+                                <img src="images/azlottery.png" alt="Arizona State University" class="company-logo">
+                            </div>
+                            <div class="experience-content">
+                                <h3 class="experience-title">Data Analyst - Research Specialist</h3>
+                                <p class="experience-meta">Arizona State University (AZ Lottery) • Phoenix, AZ • July 2025 - October 2025</p>
+                                <p class="experience-description">
+                                    I analyzed promotional campaigns to help the lottery understand what was working and what wasn't. The challenge was separating signal from noise—figuring out whether sales increases were due to promotions or other factors like seasonality or external events.
+                                </p>
+                                <p class="experience-description">
+                                    I built models to estimate promotion effectiveness, looking at metrics like redemption rates, incremental sales, and ROI. The work involved designing experiment-style analyses and segmenting customers to identify which groups responded to different types of promotions.
+                                </p>
+                                <p class="experience-description">
+                                    The goal was to help stakeholders make better decisions about promotional spend—identifying what to continue, what to adjust, and what to stop. I created dashboards and reports that translated analysis into actionable insights, helping reduce spending on underperforming campaigns.
+                                </p>
+                                <div class="experience-tools">
+                                    <h4 class="tools-heading">Technologies & Tools</h4>
+                                    <div class="tools-grid">
+                                        <span class="tool-item"><span class="tool-icon">🐍</span><span class="tool-name">Python</span></span>
+                                        <span class="tool-item"><span class="tool-icon">📊</span><span class="tool-name">Pandas</span></span>
+                                        <span class="tool-item"><span class="tool-icon">🔢</span><span class="tool-name">NumPy</span></span>
+                                        <span class="tool-item"><span class="tool-icon">📈</span><span class="tool-name">Scikit-learn</span></span>
+                                        <span class="tool-item"><span class="tool-icon">📉</span><span class="tool-name">Statsmodels</span></span>
+                                        <span class="tool-item"><span class="tool-icon">🗄️</span><span class="tool-name">SQL</span></span>
+                                        <span class="tool-item"><span class="tool-icon">📊</span><span class="tool-name">Tableau</span></span>
+                                        <span class="tool-item"><span class="tool-icon">📓</span><span class="tool-name">Jupyter</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="experience-item">
+                            <div class="experience-logo">
+                                <img src="images/ford.png" alt="Ford Motor Company" class="company-logo">
+                            </div>
+                            <div class="experience-content">
+                                <h3 class="experience-title">Data Analyst</h3>
+                                <p class="experience-meta">Ford Motor Company • Chennai, India • January 2021 - July 2021</p>
+                                <p class="experience-description">
+                                    I analyzed credit and repayment data to help Ford understand borrower risk across different regions. The work involved building models to estimate delinquency risk and probability of default, then validating those models to ensure they performed consistently across different customer segments and geographies.
+                                </p>
+                                <p class="experience-description">
+                                    I segmented borrowers into risk tiers to support portfolio monitoring and risk management decisions. The goal was to help finance and operations teams identify where to focus attention—which segments needed closer monitoring, where to adjust lending criteria, and how to allocate resources for collections.
+                                </p>
+                                <p class="experience-description">
+                                    I built dashboards that communicated credit risk trends to stakeholders, reducing the time they spent pulling data manually and helping them make faster, more informed decisions about portfolio management.
+                                </p>
+                                <div class="experience-tools">
+                                    <h4 class="tools-heading">Technologies & Tools</h4>
+                                    <div class="tools-grid">
+                                        <span class="tool-item"><span class="tool-icon">📊</span><span class="tool-name">SAS</span></span>
+                                        <span class="tool-item"><span class="tool-icon">🐍</span><span class="tool-name">Python</span></span>
+                                        <span class="tool-item"><span class="tool-icon">🗄️</span><span class="tool-name">SQL</span></span>
+                                        <span class="tool-item"><span class="tool-icon">📈</span><span class="tool-name">Logistic Regression</span></span>
+                                        <span class="tool-item"><span class="tool-icon">🎯</span><span class="tool-name">Decision Trees</span></span>
+                                        <span class="tool-item"><span class="tool-icon">📊</span><span class="tool-name">Tableau</span></span>
+                                        <span class="tool-item"><span class="tool-icon">📉</span><span class="tool-name">ROC-AUC</span></span>
+                                        <span class="tool-item"><span class="tool-icon">📐</span><span class="tool-name">Statistical Modeling</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="experience-item">
+                            <div class="experience-logo">
+                                <img src="images/caliber.png" alt="Caliber Global" class="company-logo">
+                            </div>
+                            <div class="experience-content">
+                                <h3 class="experience-title">Business Analyst</h3>
+                                <p class="experience-meta">Caliber Global • Scottsdale, AZ</p>
+                                <p class="experience-description">
+                                    I worked with internal teams to identify opportunities for automation and process improvement across enterprise workflows. The work involved understanding how teams were currently doing things, identifying bottlenecks and manual steps, and designing solutions that reduced effort and improved turnaround time.
+                                </p>
+                                <p class="experience-description">
+                                    I designed data models that consolidated information from multiple sources, making it easier for teams to access consistent, decision-ready data. This involved working with stakeholders to understand what questions they needed to answer and what information they needed to make decisions. I used AI-assisted tools, including LLM-based agents and APIs, to validate and standardize address data from inconsistent formats—reducing manual review time while maintaining data quality through validation rules.
+                                </p>
+                                <p class="experience-description">
+                                    I quantified the impact of automation and analytics initiatives by measuring reductions in manual effort, processing time, and operational costs. The goal was to help leadership understand where investments in automation and analytics were delivering value and where to focus future efforts.
+                                </p>
+                                <div class="experience-tools">
+                                    <h4 class="tools-heading">Technologies & Tools</h4>
+                                    <div class="tools-grid">
+                                        <span class="tool-item"><span class="tool-icon">🐍</span><span class="tool-name">Python</span></span>
+                                        <span class="tool-item"><span class="tool-icon">🗄️</span><span class="tool-name">SQL</span></span>
+                                        <span class="tool-item"><span class="tool-icon">🤖</span><span class="tool-name">LLM APIs</span></span>
+                                        <span class="tool-item"><span class="tool-icon">🔮</span><span class="tool-name">AI Agents</span></span>
+                                        <span class="tool-item"><span class="tool-icon">📊</span><span class="tool-name">Power BI</span></span>
+                                        <span class="tool-item"><span class="tool-icon">📈</span><span class="tool-name">Excel</span></span>
+                                        <span class="tool-item"><span class="tool-icon">🔄</span><span class="tool-name">ETL Pipelines</span></span>
+                                        <span class="tool-item"><span class="tool-icon">🗂️</span><span class="tool-name">Data Modeling</span></span>
+                                        <span class="tool-item"><span class="tool-icon">⚙️</span><span class="tool-name">Process Automation</span></span>
+                                        <span class="tool-item"><span class="tool-icon">📋</span><span class="tool-name">Requirements Analysis</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Contact Section -->
+            <section id="contact" class="section contact-section">
+                <div>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="section-intro">Interested in working together or just want to chat? Feel free to reach out.</p>
+                    
+                    <div class="contact-grid">
+                        <a href="mailto:okarthik@asu.edu" class="contact-card">
+                            <div class="contact-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact-info">
+                                <h3 class="contact-label">Mail</h3>
+                                <p class="contact-value">okarthik@asu.edu</p>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+14805726471" class="contact-card">
+                            <div class="contact-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div class="contact-info">
+                                <h3 class="contact-label">Phone</h3>
+                                <p class="contact-value">+1 (480) 572-6471</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/oviyaakarthikeyan/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="contact-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </div>
+                            <div class="contact-info">
+                                <h3 class="contact-label">LinkedIn</h3>
+                                <p class="contact-value">oviyaakarthikeyan</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
